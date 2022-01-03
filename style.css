@@ -395,74 +395,44 @@ button{
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-    .svg1{
-        display: none;
-    }
 
-    .svg2{
-        display: none;
-    }
+    /*
 
-    .svg3{
-        display: none;
+    Responsive code Columns System for tablet devices
+
+    */
+    
+    .two_column{
+        width: 50%;
+        display: flex;
     }
     
-}
-  
-  
-  
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    .svg1{
-        display: none;
-    }
-
-    .svg2{
-        display: none;
-    }
-
-    .svg3{
-        display: none;
+    .three_column{
+        width: 33.3333333333%;
+        display: flex;
     }
     
-}
-  
-  /* 
-    ##Device = Mobiles (start)
-  */
-  
-@media (min-width: 481px) and (max-width: 767px) {
-    
-
-    .heroInfo h3 span{
-        margin-top: 10px !important;
-    }
-
-    .heroInfo{
-        padding: 20px 0px;
-    }
-
-    .svg1{
-        display: none;
-    }
-
-    .svg2{
-        display: none;
-    }
-
-    .svg3{
-        display: none;
-    }
-
-    .primary-navigation{
-        display: none;
+    .four_column{
+        width: 25%;
+        display: flex;
     }
     
-}
-  
+    .five_column{
+        width: 20%;
+        display: flex;
+    }
+    
+    .six_column{
+        width: 16.6666666667%;
+        display: flex;
+    }
 
-@media (max-width: 480px) {
+
+    /*
+    
+    Responsive navbar code for Tablet devices start here
+
+    */
 
     .navlogo {
         width: 80%;
@@ -475,10 +445,11 @@ button{
     .primary-navigation{
         position: fixed;
         background-color: var(--main-color);
-        inset: 0 0 0 25%;
+        inset: 0 0 0 65%;
         z-index: 100;
         padding: 10vh 10px;
         transform: translateX(100%);
+        transition: transform 350ms ease-out;
     }
 
     .primary-navigation[data-visible="true"]{
@@ -510,6 +481,401 @@ button{
         background-size: cover;
         display: block;
         box-shadow: none !important;
+    }
+
+    .nav-toggle[aria-expanded="true"]{
+        background-image: url('img/close_white_24dp.svg');
+    }
+
+    .calltoaction{
+        margin-top: 5px !important;
+    }
+
+
+    /*
+    
+    Responsive navbar code for Tablet devices End here
+
+    */
+
+
+
+
+    .svg1{
+        display: none;
+    }
+
+    .svg2{
+        display: none;
+    }
+
+    .svg3{
+        display: none;
+    }
+    
+}
+  
+  
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /*
+
+    Responsive code Columns System for tablet devices
+
+    */
+    
+    .two_column{
+        width: 50%;
+        display: flex;
+    }
+    
+    .three_column{
+        width: 33.3333333333%;
+        display: flex;
+    }
+    
+    .four_column{
+        width: 25%;
+        display: flex;
+    }
+    
+    .five_column{
+        width: 20%;
+        display: flex;
+    }
+    
+    .six_column{
+        width: 16.6666666667%;
+        display: flex;
+    }
+
+
+    /*
+    
+    Responsive navbar code for Tablet devices start here
+
+    */
+
+    .navlogo {
+        width: 80%;
+    }
+
+    .navlogo h3 a{
+        font-size: 22px;
+    }
+
+    .primary-navigation{
+        position: fixed;
+        background-color: var(--main-color);
+        inset: 0 0 0 65%;
+        z-index: 100;
+        padding: 10vh 10px;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .primary-navigation ul li{
+        display: block;
+    }
+
+    .primary-navigation ul li a{
+        display: block;
+        padding: 12px 0px;
+        max-width: 120px;
+    }
+
+
+    .nav-toggle{
+        position: absolute;
+        background-image: url('img/menu_white_24dp.svg');
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        right: 2em;
+        top: -3px;
+        aspect-ratio: 1;
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        box-shadow: none !important;
+    }
+
+    .nav-toggle[aria-expanded="true"]{
+        background-image: url('img/close_white_24dp.svg');
+    }
+
+    .calltoaction{
+        margin-top: 5px !important;
+    }
+    
+
+    /*
+    
+    Responsive navbar code for Tablet devices End here
+
+    */
+
+
+
+
+    .svg1{
+        display: none;
+    }
+
+    .svg2{
+        display: none;
+    }
+
+    .svg3{
+        display: none;
+    }
+    
+}
+  
+  /* 
+    ##Device = Mobiles (start)
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+    /*
+
+    Responsive code Columns System for Mobile devices Start here
+
+    */
+    
+    .two_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .three_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .four_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .five_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .six_column{
+        width: 100%;
+        display: flex;
+    }
+
+
+    /*
+    
+    Responsive navbar code for Mobile devices end here
+
+    */
+    
+    .navlogo {
+        width: 80%;
+    }
+
+    .navlogo h3 a{
+        font-size: 22px;
+    }
+
+    .primary-navigation{
+        position: fixed;
+        background-color: var(--main-color);
+        inset: 0 0 0 25%;
+        z-index: 100;
+        padding: 10vh 10px;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .primary-navigation ul li{
+        display: block;
+    }
+
+    .primary-navigation ul li a{
+        display: block;
+        padding: 12px 0px;
+        max-width: 120px;
+    }
+
+
+    .nav-toggle{
+        position: absolute;
+        background-image: url('img/menu_white_24dp.svg');
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        right: 2em;
+        top: -3px;
+        aspect-ratio: 1;
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        box-shadow: none !important;
+    }
+
+    .nav-toggle[aria-expanded="true"]{
+        background-image: url('img/close_white_24dp.svg');
+    }
+
+    .calltoaction{
+        margin-top: 5px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .heroInfo h3 span{
+        margin-top: 10px !important;
+    }
+
+    .heroInfo{
+        padding: 20px 0px;
+    }
+
+    .svg1{
+        display: none;
+    }
+
+    .svg2{
+        display: none;
+    }
+
+    .svg3{
+        display: none;
+    }
+
+    .primary-navigation{
+        display: none;
+    }
+    
+}
+  
+
+@media (max-width: 480px) {
+
+
+    /*
+
+    Responsive code Columns System for Mobile devices Start here
+
+    */
+    
+    .two_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .three_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .four_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .five_column{
+        width: 100%;
+        display: flex;
+    }
+    
+    .six_column{
+        width: 100%;
+        display: flex;
+    }
+
+
+    /*
+    
+    Responsive navbar code for Mobile devices end here
+
+    */
+
+    .navlogo {
+        width: 80%;
+    }
+
+    .navlogo h3 a{
+        font-size: 22px;
+    }
+
+    .primary-navigation{
+        position: fixed;
+        background-color: var(--main-color);
+        inset: 0 0 0 25%;
+        z-index: 100;
+        padding: 10vh 10px;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .primary-navigation ul li{
+        display: block;
+    }
+
+    .primary-navigation ul li a{
+        display: block;
+        padding: 12px 0px;
+        max-width: 120px;
+    }
+
+
+    .nav-toggle{
+        position: absolute;
+        background-image: url('img/menu_white_24dp.svg');
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        right: 2em;
+        top: -3px;
+        aspect-ratio: 1;
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        box-shadow: none !important;
+    }
+
+    .nav-toggle[aria-expanded="true"]{
+        background-image: url('img/close_white_24dp.svg');
     }
 
     .calltoaction{
