@@ -165,6 +165,17 @@
     Responsive navbar code for Tablet devices End here
 
     */
+
+
+    .svg1{
+        display: none;
+    }
+    .svg2{
+        display: none;
+    }
+    .svg3{
+        display: none;
+    }
     
 }
   
@@ -271,6 +282,17 @@
     Responsive navbar code for Tablet devices End here
 
     */
+
+
+    .svg1{
+        display: none;
+    }
+    .svg2{
+        display: none;
+    }
+    .svg3{
+        display: none;
+    }
     
 }
   
@@ -375,6 +397,17 @@
     .calltoaction{
         margin-top: 5px !important;
     }
+
+
+    .svg1{
+        display: none;
+    }
+    .svg2{
+        display: none;
+    }
+    .svg3{
+        display: none;
+    }
 }
   
 
@@ -474,5 +507,15 @@
 
     .calltoaction{
         margin-top: 5px !important;
+    }
+
+    .svg1{
+        display: none;
+    }
+    .svg2{
+        display: none;
+    }
+    .svg3{
+        display: none;
     }
 }
