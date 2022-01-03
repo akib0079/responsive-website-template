@@ -117,7 +117,7 @@ header{
     width: 20%;
 }
 
-.navlinks{
+.primary-navigation{
     width: auto;
     margin-left: auto;
 }
@@ -227,7 +227,7 @@ navbar css end
 }
 
 .heroInfo img{
-    width: 400px;
+    max-width: 400px;
 }
 
 button{
@@ -455,14 +455,14 @@ button{
         display: none;
     }
 
-    .navlinks{
+    .primary-navigation{
         display: none;
     }
     
 }
   
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
 
     .navlogo {
         width: 80%;
@@ -472,19 +472,24 @@ button{
         font-size: 22px;
     }
 
-    .navlinks{
+    .primary-navigation{
         position: fixed;
         background-color: var(--main-color);
         inset: 0 0 0 25%;
         z-index: 100;
         padding: 10vh 10px;
+        transform: translateX(100%);
     }
 
-    .navlinks ul li{
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .primary-navigation ul li{
         display: block;
     }
 
-    .navlinks ul li a{
+    .primary-navigation ul li a{
         display: block;
         padding: 12px 0px;
         max-width: 120px;
@@ -492,13 +497,19 @@ button{
 
 
     .nav-toggle{
+        position: absolute;
         background-image: url('img/menu_white_24dp.svg');
         width: 40px;
+        background-color: transparent;
+        border: none;
+        right: 2em;
+        top: -3px;
         aspect-ratio: 1;
         z-index: 999;
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
+        box-shadow: none !important;
     }
 
     .calltoaction{
@@ -507,6 +518,8 @@ button{
 
 
 
+
+    
 
 
 
