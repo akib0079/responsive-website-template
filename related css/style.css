@@ -44,7 +44,11 @@ navbar css start
 
 header{
     background-color: #4C3F91;
-    width: auto;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 
 .nvbar{
@@ -139,6 +143,10 @@ header{
 navbar css end
 
 */
+
+.hero{
+    padding: 100px 0px;
+}
 
 .heroInfo{
     padding: 0px 40px 0px 0px;
